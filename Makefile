@@ -8,6 +8,7 @@
 SRC	=	my_putchar.c	\
 		my_putstr.c	\
 		my_strlen.c	\
+		my_put_nbrex.c	\
 		my_put_nbr.c	\
 		my_getnbr.c	\
 		my_printf.c

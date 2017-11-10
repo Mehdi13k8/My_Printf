@@ -17,6 +17,10 @@ int	my_print(char *str, ...)
 			if (str[i] == 'd') {
 				my_put_nbr(va_arg(ap, int));
 			}
+			if (str[i] == 'p') {
+				my_putchar("0");
+				my_put_nbr_ex(va_arg(ap, unsigned long long int));
+			}
 		}
 		i++;
 	}

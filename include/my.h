@@ -15,6 +15,7 @@
 int	my_print(char *str, ...);
 void	my_putchar(char c);
 int	my_put_nbr(int nb);
+int	my_put_nbr_ex(unsigned long long int nb);
 int	my_putstr(char *str);
 int	my_strlen(char *str);
 int	my_getnbr(char *str);
