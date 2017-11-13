@@ -1,6 +1,6 @@
 # include "include/my.h"
 
-int	*my_put_nbr(int nb)
+int	my_put_nbr(int nb)
 {
 	if (nb < 0)
 	{

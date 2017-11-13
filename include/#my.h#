@@ -14,6 +14,7 @@
 
 int	my_print(char *str, ...);
 int	my_ptr_putchar(va_list ap);
+int	my_ptr_putstr(va_list ap);
 
 //void	my_putchar(char c);
 //int	my_put_nbr(int nb);

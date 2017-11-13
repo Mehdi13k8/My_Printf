@@ -1,15 +1,11 @@
-
 # include "include/my.h"
 
 int	main(int ac, char **av)
 {
-	char *a = "x";
-	my_put_nbr_ex(364);
+	char *c = "";
+	//my_put_nbr_ex(&);
+	my_print("%x", 3000000000);
 	my_putchar('\n');
-	my_put_nbr_ex(&a);
-	my_putchar('\n');
-	//my_print("%p", &a);
-	//my_putchar('\n');
-	printf("%p\n", &a);
+	printf("%x\n", 3000000000);
 	return (0);
 }
