@@ -1,6 +1,20 @@
 # include "include/my.h"
 
-int     my_ptr_putstr(va_list ap)
+void	my_putzchar(char c)
 {
-	my_putstr(va_arg(ap, char*));
+	write(1,&c,1);
+}
+int	my_patstr(char *str)
+{
+	int	i = 0;
+	while (str[i] != '\0')
+	{
+		my_putzchar(str[i]);
+		i = i + 1;
+	}
+}
+void	my_ptr_putstr(va_list ap)
+{
+	my_putzchar('s');
+	my_patstr(va_arg(ap, char*));
 }
