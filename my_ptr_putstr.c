@@ -15,6 +15,5 @@ int	my_patstr(char *str)
 }
 void	my_ptr_putstr(va_list ap)
 {
-	my_putzchar('s');
 	my_patstr(va_arg(ap, char*));
 }

@@ -5,7 +5,7 @@ void    my_patchar_base(int c, char *base)
 	my_putchar(base[c]);
 }
 
-int     my_pat_nbr_ex(unsigned int nb)
+int     my_pat_nbr_ex(unsigned long int nb)
 {
 	char    *base = "0123456789abcdef";
 	int b = my_strlen(base);
@@ -23,5 +23,5 @@ void	my_ptr_adhexa(va_list ap)
 {
 	my_putchar('0');
 	my_putchar('x');
-	my_pat_nbr_ex(va_arg(ap, unsigned int));
+	my_pat_nbr_ex(va_arg(ap, unsigned long int));
 }

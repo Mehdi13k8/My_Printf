@@ -11,6 +11,8 @@ SRC	=	my_putchar.c	\
 		my_ptr_modulo.c	\
 		my_ptr_adhexa.c	\
 		my_ptr_putstr.c	\
+		my_ptr_S.c	\
+		my_ptr_octal.c	\
 		my_ptr_hexa.c	\
 		my_ptr_put_nbr.c\
 		my_ptr_putchar.c\
