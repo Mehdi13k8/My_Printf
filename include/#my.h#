@@ -26,7 +26,6 @@ void	my_ptr_putnbr(va_list ap);
 void	my_ptr_hexa(va_list ap);
 void	my_ptr_binary(va_list ap);
 void	my_ptr_adhexa(va_list ap);
-void	my_ptr_S(va_list ap);
 void	my_ptr_octale(va_list ap);
 void	my_ptr_unsign(va_list ap);
 void	my_ptr_modulo(va_list ap);
