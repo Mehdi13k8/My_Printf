@@ -1,11 +1,8 @@
 # include "include/my.h"
 
-void	my_putchar(char c)
-{
-	write(1,&c,1);
-}
 void     my_ptr_putchar(va_list ap)
 {
-	my_putchar(va_arg(ap,int));
+	t_list tmp;
+	my_putchar(va_arg(ap,int), tmp);
 	//my_putchar('c');
 }

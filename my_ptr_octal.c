@@ -2,14 +2,17 @@
 
 void	my_putchar_bise(char *base, int a)
 {
-	my_putchar(base[a]);
+	t_list tmp;
+	
+	my_putchar(base[a], tmp);
 }
 int	my_put_nbroc(int nb)
 {
+	t_list tmp;
 	char	*base = "01234567";
 	int	b = my_strlen(base);
 	if (nb < 0) {
-		my_putchar('-');
+		my_putchar('-', tmp);
 		nb = -nb;
 	}
 	if (nb > b - 1)

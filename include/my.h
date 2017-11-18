@@ -13,11 +13,18 @@
 # include <stdarg.h>
 # include <stdlib.h>
 
-void	my_putchar(char c);
+typedef struct	s_list
+{
+	int	i;
+	//s_list *next
+}t_list;
+
+int	my_putchar(char c, t_list tmp);
 void	my_ptr_putchar(va_list ap);
 void	my_ptr_putstr(va_list ap);
 void	my_ptr_putnbr(va_list ap);
 void	my_ptr_hexa(va_list ap);
+void	my_ptr_binary(va_list ap);
 void	my_ptr_adhexa(va_list ap);
 void	my_ptr_octale(va_list ap);
 void	my_ptr_modulo(va_list ap);

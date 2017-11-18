@@ -2,5 +2,6 @@
 
 void	my_ptr_modulo(va_list ap)
 {
-	my_putchar('%');
+	t_list tmp;
+	my_putchar('%', tmp);
 }

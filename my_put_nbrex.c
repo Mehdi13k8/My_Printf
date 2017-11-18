@@ -2,17 +2,19 @@
 
 void	my_putchar_base(int c, char *base)
 {
-	my_putchar(base[c]);
+	t_list tmp;
+	my_putchar(base[c], tmp);
 }
 int	my_put_nbr_ex(unsigned int nb)
 {
+	t_list tmp;
 	char	*base = "0123456789abcdef";
 	int b = my_strlen(base);
 	int div = 1;
 
 	if (nb < 0)
 	{
-		my_putchar('-');
+		my_putchar('-', tmp);
 		nb = -nb;
 	}
 	if (nb > b - 1)
