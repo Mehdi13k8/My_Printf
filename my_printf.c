@@ -81,8 +81,8 @@ int	my_printf(char *str, ...)
 	va_start(ap, str);
 	while (str[i] != '\0')
 	{
-		//if (str[i] == '\n')
-		//	my_putchar('\n', tmp);
+		if (str[i] == '\n')
+			my_putchar('\n', tmp);
 		//i = i + 1;
 		if (str[i] == '%') {
 			while (str[i] == ' ' || str[i] == ('#'))
@@ -111,14 +111,3 @@ int	my_printf(char *str, ...)
 	//my_put_nbr(tmp.i);
 	return (num);
 }
-//my_compar(str[i], ap);
-//if (str[i] == 's') {
-//my_putstr(va_arg(ap, char*));
-//}
-/*if (str[i] == 'd') {
-my_put_nbr(va_arg(ap, int));
-}*/
-//if (str[i] == 'x') {
-//my_putchar('0');
-//my_putchar('x');
-//my_put_nbr_ex(va_arg(ap, unsigned int));
