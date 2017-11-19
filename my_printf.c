@@ -50,12 +50,11 @@ int	my_flag_check(va_list ap, void (*tab[12])(va_list ap), int flagn, char a)
 	if (flagn <= 11 && flagn > 0) {
 		creat_tab(ap, tab);
 		tab[flagn](ap);
-		//if (flag
-		//my_putchar(ma_strlen(va_arg(ap, char*)));
 	}
 	else {
-		//my_putchar(a, tmp);
-		return (84);
+		my_putstr("% ");
+		my_putchar(a, tmp);
+		//return (84);
 	}
 }
 
@@ -72,18 +71,16 @@ int	my_printf(char *str, ...)
 	va_start(ap, str);
 	while (str[i] != '\0')
 	{
-		//if (str[i] == '\n')
-		//my_putchar('\n', tmp);
-		//i = i + 1;
 		if (str[i] == '%') {
-			while (str[i] == ' ' || str[i] == ('#'))
-				i = i + 1;
 			i++;
+			while (str[i] == ' ' || str[i] == ('#'))
+					i = i + 1;
+			//i++;
 			flagn = my_compar(str[i]);
-			my_put_nbr(flagn);
+			//my_put_nbr(flagn);
 			my_flag_check(ap, tab, flagn, str[i]);
 		}
-		else 
+		else
 			my_putchar(str[i],tmp);
 		//my_flag_check(ap, tab, flagn, str[i]);
 		i++;
