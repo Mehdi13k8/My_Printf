@@ -18,7 +18,6 @@ int	my_put_nbroc(int nb)
 	if (nb > b - 1)
 		my_put_nbroc(nb / b);
 	my_putchar_bise(base, nb % 8);
-	//my_putchar(nb% 10 + 48);
 }
 void	my_ptr_octale(va_list ap)
 {

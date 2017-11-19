@@ -10,8 +10,6 @@ int	ma_strlen(char *str)
 }
 void    creat_tab(va_list ap, void (*tab[12])(va_list ap))
 {
-	//void	(*tab[2])(va_list ap);
-	//tab[i];
 	tab[10] = &my_ptr_S;
 	tab[0] = &my_ptr_putchar;
 	tab[1] = &my_ptr_putstr;
@@ -23,8 +21,6 @@ void    creat_tab(va_list ap, void (*tab[12])(va_list ap))
 	tab[6] = &my_ptr_octale;
 	tab[7] = &my_ptr_binary;
 	tab[9] = &my_ptr_unsign;
-	//my_putchar(i + 48);
-	//tab[11] = NULL;
 }
 
 int	my_compar(char x)
@@ -54,7 +50,6 @@ int	my_flag_check(va_list ap, void (*tab[12])(va_list ap), int flagn, char a)
 	else {
 		my_putstr("% ");
 		my_putchar(a, tmp);
-		//return (84);
 	}
 }
 
@@ -74,20 +69,15 @@ int	my_printf(char *str, ...)
 		if (str[i] == '%') {
 			i++;
 			while (str[i] == ' ' || str[i] == ('#'))
-					i = i + 1;
-			//i++;
+				i = i + 1;
 			flagn = my_compar(str[i]);
-			//my_put_nbr(flagn);
 			my_flag_check(ap, tab, flagn, str[i]);
 		}
 		else
 			my_putchar(str[i],tmp);
-		//my_flag_check(ap, tab, flagn, str[i]);
 		i++;
 	}
-	//my_put_nbr(tmp.i);
 	num = tmp.i;
 	va_end(ap);
-	//my_put_nbr(tmp.i);
 	return (num);
 }

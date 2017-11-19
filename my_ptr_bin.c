@@ -17,7 +17,6 @@ int	my_put_nbrbin(unsigned int nb)
 	if (nb > b - 1)
 		my_put_nbrbin(nb / b);
 	my_putchar_bin_base(base, nb % b);
-	//my_putchar(nb% 10 + 48);
 }
 void	my_ptr_binary(va_list ap)
 {
