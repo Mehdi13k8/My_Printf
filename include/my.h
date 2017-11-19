@@ -34,7 +34,7 @@ void	my_ptr_modulo(va_list ap);
 int	my_put_nbroc(int nb);
 void	my_ptr_octale(va_list ap);
 int	my_printf(char *str, ...);
-int	my_put_nbr(int nb);
+int	my_put_nbr(long int nb);
 int	my_put_nbr_ex(unsigned int nb);
 int	my_put_nbr_EX(unsigned int nb);
 int	my_putstr(char *str);

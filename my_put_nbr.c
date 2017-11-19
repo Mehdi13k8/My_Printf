@@ -1,6 +1,6 @@
 # include "include/my.h"
 
-int	my_put_nbr(int nb)
+int	my_put_nbr(long int nb)
 {
 	t_list tmp;
 	if (nb < 0)
