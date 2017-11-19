@@ -9,6 +9,7 @@ SRC	=	my_putchar.c	\
 		my_putstr.c	\
 		my_strlen.c	\
 		my_ptr_modulo.c	\
+		my_ptr_HEXA.c	\
 		my_ptr_adhexa.c	\
 		my_ptr_putstr.c	\
 		my_ptr_unsign.c	\
@@ -19,6 +20,7 @@ SRC	=	my_putchar.c	\
 		my_ptr_put_nbr.c\
 		my_ptr_putchar.c\
 		my_put_nbrex.c	\
+		my_put_nbrEX.c	\
 		my_put_nbr.c	\
 		my_getnbr.c	\
 		my_printf.c
