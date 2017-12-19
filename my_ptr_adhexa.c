@@ -1,12 +1,12 @@
 # include "include/my.h"
 
-void    my_patchar_base(int c, char *base)
+void	my_patchar_base(int c, char *base)
 {
 	t_list tmp;
 	my_putchar(base[c], tmp);
 }
 
-int     my_pat_nbr_ex(long int nb)
+int	my_pat_nbr_ex(long int nb)
 {
 	t_list tmp;
 	char    *base = "0123456789abcdef";

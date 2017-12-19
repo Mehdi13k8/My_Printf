@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2017
+** printf
+** File description:
+** getnbr
+*/
+
 # include "include/my.h"
 
 int	isnum(char x)

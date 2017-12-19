@@ -1,9 +1,11 @@
-# include "include/my.h"
+/*
+** EPITECH PROJECT, 2017
+** putstr_ptr
+** File description:
+** printf
+*/
 
-/*void	my_putzchar(char c)
-  {
-  write(1,&c,1);
-  }*/
+# include "include/my.h"
 
 int	my_patstr(char *str)
 {
@@ -15,6 +17,7 @@ int	my_patstr(char *str)
 		i = i + 1;
 	}
 }
+
 void	my_ptr_putstr(va_list ap)
 {
 	my_patstr(va_arg(ap, char*));

@@ -8,7 +8,8 @@ int	ma_strlen(char *str)
 		len = len + 1;
 	return (len);
 }
-void    creat_tab(va_list ap, void (*tab[13])(va_list ap))
+
+void	creat_tab(va_list ap, void (*tab[13])(va_list ap))
 {
 	tab[10] = &my_ptr_S;
 	tab[0] = &my_ptr_putchar;
@@ -50,8 +51,6 @@ int	my_flag_check(va_list ap, void (*tab[13])(va_list ap), int flagn, char a)
 		tab[flagn](ap);
 	}
 	else {
-		my_putstr("% ");
-		my_putchar(a, tmp);
 	}
 }
 

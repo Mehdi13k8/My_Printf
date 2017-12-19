@@ -1,6 +1,13 @@
+/*
+** EPITECH PROJECT, 2017
+** string_gestion
+** File description:
+** printf
+*/
+
 # include "include/my.h"
 
-int     is_aff(char c)
+int	is_aff(char c)
 {
 	if (c < 8)
 		return (1);
@@ -10,7 +17,8 @@ int     is_aff(char c)
 		return (4);
 	return (3);
 }
-void    my_pitstr(char *str)
+
+void	my_pitstr(char *str)
 {
 	t_list tmp;
 	int     i = 0;
@@ -39,7 +47,7 @@ void    my_pitstr(char *str)
 	}
 }
 
-void    my_ptr_S(va_list ap)
+void	my_ptr_S(va_list ap)
 {
 	t_list tmp;
 	my_pitstr(va_arg(ap, char*));
