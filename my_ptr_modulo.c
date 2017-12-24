@@ -1,7 +1,13 @@
+/*
+** EPITECH PROJECT, 2017
+** printf
+** File description:
+** modulo
+*/
+
 # include "include/my.h"
 
 void	my_ptr_modulo(va_list ap)
 {
-	t_list tmp;
-	my_putchar('%', tmp);
+  my_putchar('%');
 }

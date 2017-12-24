@@ -20,9 +20,10 @@ SRC	=	my_putchar.c	\
 		my_ptr_put_nbr.c\
 		my_ptr_putchar.c\
 		my_put_nbrex.c	\
-		my_put_nbrEX.c	\
+		my_put_nbrexup.c\
 		my_put_nbr.c	\
 		my_getnbr.c	\
+		ma_strlen.c	\
 		my_printf.c
 
 

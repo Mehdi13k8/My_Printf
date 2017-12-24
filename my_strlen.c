@@ -1,3 +1,10 @@
+/*
+** EPITECH PROJECT, 2017
+** printf
+** File description:
+** strlen
+*/
+
 # include "include/my.h"
 
 int	my_strlen(char *str)

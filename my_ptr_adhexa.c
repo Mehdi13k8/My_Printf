@@ -1,9 +1,16 @@
+/*
+** EPITECH PROJECT, 2017
+** printf
+** File description:
+** exa
+*/
+
 # include "include/my.h"
 
 void	my_patchar_base(int c, char *base)
 {
 	t_list tmp;
-	my_putchar(base[c], tmp);
+	my_putchar(base[c]);
 }
 
 int	my_pat_nbr_ex(long int nb)
@@ -14,7 +21,7 @@ int	my_pat_nbr_ex(long int nb)
 	
 	if (nb < 0)
 	{
-		my_putchar('-', tmp);
+		my_putchar('-');
 		nb = -nb;
 	}
 	if (nb > b - 1)
@@ -25,7 +32,7 @@ int	my_pat_nbr_ex(long int nb)
 void	my_ptr_adhexa(va_list ap)
 {
 	t_list tmp;
-	my_putchar('0', tmp);
-	my_putchar('x', tmp);
+	my_putchar('0');
+	my_putchar('x');
 	my_pat_nbr_ex(va_arg(ap, long int));
 }

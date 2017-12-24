@@ -1,16 +1,22 @@
+/*
+** EPITECH PROJECT, 2017
+** printf
+** File description:
+** unsigned
+*/
+
 # include "include/my.h"
 
 int	my_put_unsignednbr(unsigned int nb)
 {
-	t_list tmp;
-	if (nb < 0)
-	{
+  if (nb < 0)
+    {
 		nb = -nb;
-		my_putchar('-', tmp);
+		my_putchar('-');
 	}
 	if (nb > 9)
 		my_put_unsignednbr(nb / 10);
-	my_putchar((nb % 10) + 48, tmp);
+	my_putchar((nb % 10) + 48);
 }
 
 void	my_ptr_unsign(va_list ap)

@@ -19,7 +19,8 @@ typedef struct	s_list
 	//s_list *next
 }t_list;
 
-int	my_putchar(char c, t_list tmp);
+int	my_putchar(char c);
+int	ma_strlen(char *str);
 void	my_ptr_putchar(va_list ap);
 void	my_ptr_putstr(va_list ap);
 void	my_ptr_putnbr(va_list ap);

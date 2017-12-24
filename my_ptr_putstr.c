@@ -13,7 +13,7 @@ int	my_patstr(char *str)
 	int	i = 0;
 	while (str[i] != '\0')
 	{
-		my_putchar(str[i], tmp);
+	  my_putchar(str[i]);
 		i = i + 1;
 	}
 }
