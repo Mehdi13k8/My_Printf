@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2017
-** printf
+** maprintf
 ** File description:
 ** modulo
 */
@@ -9,5 +9,5 @@
 
 void	my_ptr_modulo(va_list ap)
 {
-  my_putchar('%');
+	my_putchar('%');
 }

@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2017
-** printf
+** maprintf
 ** File description:
-** strlen
+** mastrlen
 */
 
 # include "include/my.h"

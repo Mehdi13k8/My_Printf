@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2017
-** printf
+** maprintf
 ** File description:
 ** exa
 */
@@ -18,7 +18,7 @@ int	my_pat_nbr_ex(long int nb)
 	t_list tmp;
 	char    *base = "0123456789abcdef";
 	int b = my_strlen(base);
-	
+
 	if (nb < 0)
 	{
 		my_putchar('-');

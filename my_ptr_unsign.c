@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2017
-** printf
+** maprintf
 ** File description:
 ** unsigned
 */
@@ -9,8 +9,8 @@
 
 int	my_put_unsignednbr(unsigned int nb)
 {
-  if (nb < 0)
-    {
+	if (nb < 0)
+	{
 		nb = -nb;
 		my_putchar('-');
 	}

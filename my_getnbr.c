@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2017
-** printf
+** maprintf
 ** File description:
-** getnbr
+** magetnbr
 */
 
 # include "include/my.h"
@@ -19,6 +19,7 @@ int	isop(char a)
 	if (a == '-')
 		return (3);
 }
+
 int	my_getnbr(char *str)
 {
 	int	i = 0;

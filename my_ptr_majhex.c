@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2017
-** printf
+** maprintf
 ** File description:
-** hexamaj
+** mahexamaj
 */
 
 # include "include/my.h"

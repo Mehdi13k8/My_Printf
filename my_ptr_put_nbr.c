@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2017
-** printf
+** myprintf
 ** File description:
-** putnbrptr
+** myputnbrptr
 */
 
 # include "include/my.h"

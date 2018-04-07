@@ -16,7 +16,6 @@
 typedef struct	s_list
 {
 	int	i;
-	//s_list *next
 }t_list;
 
 int	my_putchar(char c);

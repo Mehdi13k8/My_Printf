@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2017
-** printf
+** maprintf
 ** File description:
 ** hexa
 */

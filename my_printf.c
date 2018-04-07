@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2017
-** main_func
+** mamain_func
 ** File description:
-** printf
+** maprintf
 */
 
 # include "include/my.h"
@@ -42,15 +42,18 @@ int	my_compar(char x)
 		}
 	}
 }
+
 int	push(char *str, int i)
 {
-  while (str[i] == ' ' || str[i] == ('#'))
-    i = i + 1;
-  return (i);
+	while (str[i] == ' ' || str[i] == ('#'))
+		i = i + 1;
+	return (i);
 }
+
 int	my_flag_check(va_list ap, void (*tab[13])(va_list ap), int flagn, char a)
 {
 	t_list tmp;
+
 	if (flagn <= 12 && flagn > 0) {
 		creat_tab(ap, tab);
 		tab[flagn](ap);
@@ -61,24 +64,24 @@ int	my_flag_check(va_list ap, void (*tab[13])(va_list ap), int flagn, char a)
 
 int	my_printf(char *str, ...)
 {
-  int	i = 0,flagn;
-  void (*tab[13])(va_list ap);
-  va_list	ap;
+	int	i = 0, flagn;
+	void (*tab[13])(va_list ap);
+	va_list	ap;
 
-  va_start(ap, str);
-  if (str[i] == '\0')
-    return (84);
-  while (str[i] != '\0')
-    {
-      if (str[i] == '%') {
-	i++;
-	i = push(str, i);
-	flagn = my_compar(str[i]);
-	my_flag_check(ap, tab, flagn, str[i]);
-      }
-      else
-	my_putchar(str[i]);
-      i++;
-    }
-  va_end(ap);
+	va_start(ap, str);
+	if (str[i] == '\0')
+		return (84);
+	while (str[i] != '\0')
+	{
+		if (str[i] == '%') {
+			i++;
+			i = push(str, i);
+			flagn = my_compar(str[i]);
+			my_flag_check(ap, tab, flagn, str[i]);
+		}
+		else
+			my_putchar(str[i]);
+		i++;
+	}
+	va_end(ap);
 }
